@@ -30,7 +30,7 @@ provider "flux" {
     cluster_ca_certificate = kind_cluster.main.cluster_ca_certificate
   }
   git = {
-    url = "https://github.com/${var.github_group}/${var.github_project}.git"
+    url = "https://github.com/${var.github_username}/${var.github_project}.git"
     http = {
       username = var.github_token
       password = var.github_token

@@ -13,8 +13,8 @@ module "kind_cluster" {
 
 
 
-  github_group = "vimuchiaroni"
-  github_project = "flux-terraform-azure"
+  github_username = var.github_username
+  github_project = var.github_project
   github_token   = var.github_token
 
 

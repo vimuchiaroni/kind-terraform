@@ -26,4 +26,9 @@ resource "helm_release" "main" {
   chart      = "tf-controller"
   version    = "v0.16.0-rc.3"
   namespace = var.flux_namespace
+
+  set {
+    name = "allowCrossNamespaceRefs"
+    value = "true"
+  }
 }

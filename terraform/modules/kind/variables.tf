@@ -151,22 +151,9 @@ variable "flux_watch_all_namespaces" {
 }
 
 
-
-
-variable "github_group" {
-  description = "github group to bootstrap flux CD"
-  type        = string
-  default     = "vimuchiaroni.devops/gitops"
-
-}
-
-
-
 variable "github_project" {
   description = "github project to bootstrap flux CD"
   type        = string
-  default     = "flux-fleet"
-
 }
 
 variable "github_token" {
@@ -174,6 +161,10 @@ variable "github_token" {
   type        = string
 }
 
+variable "github_username" {
+  description = "github username to bootstrap flux CD"
+  type        = string
+}
 
 
 variable "kind_api_version" {
